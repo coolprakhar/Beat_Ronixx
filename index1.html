@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>{% block title %}Beat Ronixx!{% endblock %}</title>
+  {% load staticfiles %}
+  <link rel="shortcut icon" type="image/png" href="{%  static 'favicon.ico' %}"/>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+   integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--Bootstrap CSS-->
+  <link rel="stylesheet" href="{% static 'music/bootstrap.min.css' %}">
+    <!--Main CSS-->
+  <link rel="stylesheet" href="{% static 'music/main.css' %}">
+  <!-- magnific popup CSS -->
+  <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+  <!-- font awesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js"
+   integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
+  <!-- Google Fonts-->
+<link href="https://fonts.googleapis.com/css?family=Cavet" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
+</head>
+
+<body>
+
+
+
+
+<!-- header section-->
+<header id="header">
+  <div class="container">
+    <div class="row height-90 align-items-center justify-content-center">
+      <div class="col">
+        <div class="banner text-center">
+          <h1 class="display-1 text-capitalize w-45 mx-auto">
+            <small>Welcome To</small><br><strong class="primary-color">BeatRonixx!</strong>
+          </h1>
+          <a href="{% url 'music:index' %}" class="beat-btn my-2 text-capitalize btn btn-warning btn-lg btn btn-outline-danger">Explore Now</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <a href="" class="btn header-link primary-color btn-lg btn btn-light"><i class="fas fa-arrow-down"></i></a>
+</header>
+<!-- end of header section-->
+
+
+<!--Music items-->
+<section class="py-5" id="special-items">
+<div class="container my-5">
+  <div class="row parent-container">
+    <!--Music item-->
+    <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
+      <div class="item-conatiner">
+        <img src="{% static 'music/images/rock.jpg' %}" class="img-fluid img-thumbnail item-img" alt="aloo parantha">
+        <a href="rock.html">
+          <h1 class="text-uppercase text-center item-link px-3">Rock</h1>
+        </a>
+      </div>
+    </div>
+
+
+    <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
+      <div class="item-conatiner">
+        <img src="{% static 'music/images/edm.jpg' %}" class="img-fluid img-thumbnail item-img" alt="Bread Pakora">
+        <a href="images/breadpakora.jpg">
+          <h1 class="text-uppercase text-center item-link px-3">Edm</h1>
+        </a>
+      </div>
+    </div>
+
+    <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
+      <div class="item-conatiner">
+        <img src="{% static 'music/images/g1.jpg' %}" class="img-fluid img-thumbnail item-img" alt="Pav Bhaji">
+        <a href="images/paobhaji.jpg">
+          <h1 class="text-uppercase text-center item-link px-3">Gazals</h1>
+        </a>
+      </div>
+    </div>
+
+    <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
+      <div class="item-conatiner">
+        <img src="{% static 'music/images/jazz-2.jpg' %}" class="img-fluid img-thumbnail item-img" alt="Poha">
+        <a href="images/poha1.jpg">
+          <h1 class="text-uppercase text-center item-link px-3">Jazz</h1>
+        </a>
+      </div>
+    </div>
+
+    <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
+      <div class="item-conatiner">
+        <img src="{% static 'music/images/punjabi.jpg' %}" class="img-fluid img-thumbnail item-img" alt="Maggi">
+        <a href="images/maggi.jpg">
+          <h1 class="text-uppercase text-center item-link px-3">Punjabi</h1>
+        </a>
+      </div>
+    </div>
+
+    <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
+      <div class="item-conatiner">
+        <img src="{% static 'music/images/country.jpg' %}" class="img-fluid img-thumbnail item-img" alt="sandwich">
+        <a href="images/country.jpg">
+          <h1 class="text-uppercase text-center item-link px-3">Country</h1>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</section>
+<!--end of Music items-->
+
+
+
+    </div>
+    <div class="col-md-6"></div>
+
+  </div>
+</div>
+</section>
+<!--end of Music section-->
+<!--
+<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/609810348&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></<ifram></ifram>e>
+-->
+<!-- Footer -->
+<footer class="page-footer font-small special-color-dark pt-4">
+
+    <!-- Footer Elements -->
+    <div class="container">
+
+      <!-- Social buttons -->
+      <ul class="list-unstyled list-inline text-center">
+        <li class="list-inline-item">
+          <a class="btn-floating btn-fb mx-1">
+            <i class="fab fa-facebook-f"> </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-floating btn-tw mx-1">
+            <i class="fab fa-twitter"> </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-floating btn-gplus mx-1">
+            <i class="fab fa-google-plus-g"> </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-floating btn-li mx-1">
+            <i class="fab fa-linkedin-in"> </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-floating btn-dribbble mx-1">
+            <i class="fab fa-dribbble"> </i>
+          </a>
+        </li>
+      </ul>
+      <!-- Social buttons -->
+
+    </div>
+    <!-- Footer Elements -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3" style="color:green">© 2019 Copyright:
+      <a href="">BeatRonixx.com</a>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
+
+<script src="{% static 'music/js/jquery-3.4.0.min.js' %}"></script>
+<script src="{% static 'music/js/bootstrap.bundle.min.js' %}"></script>
+<script src="magnific-popup/jquery.magnific-popup.js"></script>
+<script src="{% static 'music/js/jquery.ripples-min.js' %}"></script>
+<script src="{% static 'music/js/script.js' %}"></script>
+
+</body>
+</html>

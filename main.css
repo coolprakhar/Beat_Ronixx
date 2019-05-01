@@ -1,0 +1,244 @@
+.info{
+  background:snow;
+}
+
+body{
+  font-family: 'Cavet', cursive;
+  background:url("images/wallmusic.jpg")center/cover fixed no-repeat;
+}
+
+.primary-color{
+  color:#705;
+}
+
+.info h2{
+  word-spacing:0.6rem;
+}
+.info a{
+  transition:color 2s ease-in-out;
+ }
+ .info a:hover{
+   color:#242424
+ }
+
+ /*Header*/
+ #header{
+   min-height:calc(100vh - 94px);
+   background:url("images/food5.jpg");
+   background-position: center;
+   background-size: cover;
+   background-attachment: fixed;
+   background-repeat: no-repeat;
+ }
+
+ .height-90{
+   min-height:calc(100vh - 94px);
+ }
+ .banner h1{
+   border-top: 6px dotted white;
+   border-bottom: 6px dotted white;
+   animation: fromLeft;
+   animation-duration: 1s;
+   animation-delay: 2s;
+   opacity: 0;
+   animation-fill-mode: forwards;
+ }
+
+ @keyframes fromLeft {
+0%{
+  transform:translateX(-100px);
+  opacity: 0;
+}
+
+50%{
+  transform:translateX(30px);
+}
+100%{
+  transform:translateX(0px);
+  opacity: 1;
+  }
+ }
+
+ .main-btn{
+   color:#004E89;
+   background:#EFEFD0;
+   font-size: 2rem;
+   border:2px solid black;
+   transition: all 1s ease-in-out;
+ }
+ main-btn:hover{
+   color:#242424;
+   border: 2px solid #E6E6E6;
+   background: #E6E6E6  ;
+ }
+
+ .beat-btn{
+   animation: fromLeft;
+   animation-duration: 8s;
+   animation-delay: 2s;
+   opacity: 0;
+   animation-fill-mode: forwards; }
+
+ @keyframes fromRight {
+0%{
+  transform:translateX(100px);
+  opacity: 0;
+}
+
+50%{
+  transform:translateX(-30px);
+}
+100%{
+  transform:translateX(0px);
+  opacity: 1;
+  }
+ }
+
+
+
+.header-link{
+  display: inline-block;
+  position: absolute;
+  bottom:5%;
+  left:50%;
+  background:whitesmoke;
+  border-radius:10px;
+  transition: all 2s ease;
+  animation: fromBottom;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+}
+.header-link:hover{
+  color:black;
+}
+
+@keyframes fromBottom {
+  0%{
+    transform: translateY(-10px);
+  }
+  50%{
+    transform: translateY(10px);
+  }
+  100%{
+    transform: translateY(-10px);
+  }
+}
+  /*NAVBAR*/
+  .navbar{
+    background: transparent;
+    padding:20px 20px;
+    transition: all 1s ease;
+    padding-top: 60px;
+  }
+  .nav-item{
+    list-style-type: none;
+    float:left;
+  }
+  .navbar-background{
+    padding:5px 20px;
+  }
+
+  .navbar-brand{
+    font-size: 30px;
+    transition: all 1s ease;
+  }
+
+  .navbar-brand:hover{
+  color:#242424;
+  }
+
+  .nav-link{
+    color:antiquewhite;
+    text-decoration: none;
+    transition: all 2s ease;
+    font-size:23px;
+  }
+  .nav-link:hover{
+  color:#d3325f;
+  }
+
+  .nav-btn{
+    background: transparent;
+    color:#d3325f;
+    border:2px solid #d3325f;
+    font-size: 23px
+    transition: all 2s ease;
+  }
+
+  .nav-btn:hover{
+    color:#242424;
+    border:2px solid #242424;
+    transform: rotate(10deg)
+  }
+  .toggler-btn{
+  position: absolute;
+
+  border:2px solid #d3325f;
+  padding:5px;
+  transition: all 2s ease;
+  }
+
+  .bar{
+  width:30px;
+  height:30px;
+  margin:5px;
+  background: #d3325f;
+  transition: all 0.5s ease;
+  }
+  .change .bar1{
+    transition: rotate(45deg) translate(-5px,6px);
+  }
+  .change .bar2{
+opacity: 0;
+ }
+  .change .bar2{
+    transition: rotate(45deg) translate(-5px,8px);
+  }
+
+
+
+/*Menu CSS*/
+.item-conatiner{
+position:relative;
+/*for the link*/
+overflow: hidden;
+background: linear-gradient(rgb(0, 0, 0),rgb(0, 0, 0));
+transition: all 2s ease;
+}
+
+.item-img{
+  transition: all 2s ease;
+}
+
+.item-conatiner:hover .item-img {
+  transform: scale(1.2);
+  opacity: 0.5;
+}
+
+.item-link{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color:#2f2f2f;
+  font-size: 2rem;
+  border-top: 3px solid #d3325f;
+  border-bottom: 3px solid #d3325f;
+  transition: all 2s ease;
+  }
+
+  .item-container:hover .item-link {
+    opacity: 1;
+  }
+
+  .item-link:hover {
+    color:#c9c1ac;
+    border:3px solid #c9c1ac;
+    background: #c9c1ac;
+    color:#242424;
+  }
+
+  .item-container:hover{
+    outline:10px solid #c9c1ac;
+    outline-offset: 0.8rem;
+  }
